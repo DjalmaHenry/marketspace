@@ -10,7 +10,7 @@ export function Button({ title, variant = 'blue', ...rest }: Props) {
     <ButtonNativeBase
       w="full"
       h={14}
-      bg={variant === 'gray' ? 'gray.100' : 'blue.500'}
+      bg={variant === 'gray' ? 'gray.200' : 'blue.500'}
       rounded="sm"
       _pressed={{
         bg: variant === 'gray' ? 'gray.200' : 'blue.700'  
