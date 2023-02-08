@@ -3,12 +3,13 @@ import { Button as ButtonNativeBase, IButtonProps, Text } from 'native-base';
 type Props = IButtonProps & {
   title: string;
   variant?: 'blue' | 'gray';
+  width?: number;
 }
 
-export function Button({ title, variant = 'blue', ...rest }: Props) {
+export function Button({ title, variant = 'blue', width = 100, ...rest }: Props) {
   return (
     <ButtonNativeBase
-      w="full"
+      w={width}
       h={14}
       bg={variant === 'gray' ? 'gray.200' : 'blue.500'}
       rounded="sm"
